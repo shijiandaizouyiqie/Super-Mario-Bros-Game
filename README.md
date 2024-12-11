@@ -18,9 +18,7 @@
 model = PPO("CnnPolicy", env, verbose=1, tensorboard_log=tensorboard_log, **train_params)
 ```
 
-测试时调用算法的 `predict()`方法获取动作，然后调用环境的 `step()`方法获取采取动作后的状态。然后调用 `env.render()`
-
-即可在UI中展示。
+测试时调用算法的 `predict()`方法获取动作，然后调用环境的 `step()`方法获取采取动作后的状态。然后调用 `env.render()`即可在UI中展示。
 
 > 具体api的调用方法和openai的gym差不多。
 

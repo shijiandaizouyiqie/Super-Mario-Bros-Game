@@ -9,9 +9,9 @@
 
 ## v1
 
-该版本是简易实现版本，使用的 `stable_baselines3` 库来完成，里面封装好了相关的算法。
+该版本是简易实现版本，使用的 `stable_baselines3` 库来完成，里面封装好了相关的算法类。
 
-训练时调用算法填入对应参数即可。
+训练时调用算法类填入对应参数即可。
 
 ```python
 model = PPO("CnnPolicy", env, verbose=1, tensorboard_log=tensorboard_log, **train_params)
@@ -26,8 +26,8 @@ model = PPO("CnnPolicy", env, verbose=1, tensorboard_log=tensorboard_log, **trai
 
 使用的算法为 `Dueling_DQN` 
 
-代码结构部分的话参照了 [Super-mario-bros-PPO-pytorch](https://github.com/vietnh1009/Super-mario-bros-PPO-pytorch) 。以及 [动手学强化学习](https://hrl.boyuai.com/chapter/1/%E5%88%9D%E6%8E%A2%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/) 这个DRL的教程的 `Dueling_DQN`部分。
+代码结构部分的话参照了 [Super-mario-bros-PPO-pytorch](https://github.com/vietnh1009/Super-mario-bros-PPO-pytorch) 。算法参照了 [动手学强化学习](https://hrl.boyuai.com/chapter/1/%E5%88%9D%E6%8E%A2%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/) 这个DRL的教程的 `Dueling_DQN`部分。
 
-> 基本就是结合二者魔改了一番
+> 我代码里面没写多少注释，如果看不懂的话可以去这两个仓库看看思路
 
-自己写完差不多跑了几千个epoch，然后拿第一关测试了一下，通关是没什么问题。但是时间有限，没进一步的完善一些细节。后续闲下来了会回来完善的(应该？)
+写完差不多跑了几千个epoch，然后拿第一关测试了一下，通关是没什么问题。但是时间有限，没进一步的完善一些细节。后续闲下来了会回来完善的(应该？)

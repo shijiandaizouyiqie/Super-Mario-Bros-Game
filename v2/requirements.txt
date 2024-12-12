@@ -1,6 +1,6 @@
 stable-baselines3==1.4.0
 gym==0.19.0
 gym-super-mario-bros==7.4.0
-pip==0.23.1     #pip需要降级才能安装低版本的gym
+pip==0.23.1     #pip需要降级才能安装低版本的gym，0.23.1是我降级后的版本，只需满足能下载低版本的gym即可
 keyboard
 # 其余库根据报错或者导入的包直接pip install安装即可
